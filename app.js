@@ -13,13 +13,15 @@ function init() {
         return '#' + Math.floor(Math.random() * 16777215).toString(16);
     }
 
-    body.style.backgroundColor = getRandomColor();
-    hex.innerHTML = getRandomColor();
+    let randomColor = getRandomColor()
+    body.style.backgroundColor = randomColor;
+    hex.innerHTML = randomColor;
 
     // Set the random color as the background-color of the div when the reset is clicked
     reset.addEventListener("click", function () {
-        body.style.backgroundColor = getRandomColor();
-        hex.innerHTML = getRandomColor();
+        let randomColor = getRandomColor()
+        body.style.backgroundColor = randomColor;
+        hex.innerHTML = randomColor;
     });
 
 
