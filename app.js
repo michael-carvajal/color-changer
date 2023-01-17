@@ -41,6 +41,7 @@ function init() {
             newDiv.style.backgroundColor = saved_array[0];
             newDiv.style.border = "2px solid black"
             newDiv.style.margin = "10px"
+            newDiv.innerHTML = saved[saved.length - 1]
 
             // Append the new div to the container element
             saved_display.appendChild(newDiv);
